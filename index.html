@@ -11,6 +11,41 @@
     .main {
         margin: 10px auto;
         width: 50%;
+        position: relative;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    
+    .image {
+        transition: all 2s ease;
+        opacity: 1;
+        height: 200px;
+        width: 200px;
+        transition: all 2s ease-in;
+    }
+    
+    .overlay h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+    
+    .overlay {
+        height: 200px;
+        /* width: 200px; */
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        background: #000;
+        opacity: 0;
+        transition: all 2s ease-in-out;
+    }
+    
+    .main:hover .overlay {
+        opacity: 0.8;
+        width: 200px;
     }
 </style>
 
