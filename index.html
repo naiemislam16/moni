@@ -6,51 +6,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="css/style.css" rel="stylesheet" />
-    <style>
-        .main {
-            position: relative;
-            margin: 20px auto;
-            background: red;
-            height: 200px;
-            width: 200px;
-        }
-        
-        .a {
-            background: red;
-            height: 200px;
-            width: 200px;
-        }
-        
-        .b {
-            background: #000;
-            height: 200px;
-            width: 0px;
-            position: absolute;
-            top: 0;
-            opacity: 0;
-            bottom: 0%;
-            transition: ease-in-out 2s all;
-        }
-        
-        .main:hover .b {
-            opacity: 0.3;
-            bottom: 100%;
-            width: 200px;
-        }
-        
-        .b h1 {
-            color: wheat;
-        }
-    </style>
 </head>
 
 <body>
-    <div class="main">
-        <div class="a"></div>
-        <div class="b">
-            <h1>Naiem islam</h1>
-        </div>
-    </div>
+    <p id="demo"></p>
+
+    <script>
+        var w =
+            window.innerWidth ||
+            document.documentElement.clientWidth ||
+            document.body.clientWidth;
+
+        var h =
+            window.innerHeight ||
+            document.documentElement.clientHeight ||
+            document.body.clientHeight;
+
+        var x = document.getElementById("demo");
+        x.innerHTML = "Browser inner window width: " + w + ", height: " + h + ".";
+    </script>
 </body>
 
 </html>
